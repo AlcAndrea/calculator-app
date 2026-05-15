@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Cute Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="title-bar">
+            <div class="title-text">CALCULATOR</div>
+            <div class="window-controls">
+                <div class="win-btn" id="min-btn">—</div>
+                <div class="win-btn" id="max-btn">▢</div>
+                <div class="win-btn" id="close-btn">X</div>
+            </div>
+        </div>
+
+        <div id="display">0</div>
+
+        <div class="buttons">
+            <button class="btn" id="clear">C</button>
+            <button class="btn" id="divide">/</button>
+            <button class="btn" id="multiply">*</button>
+            <button class="btn" id="subtract">-</button>
+            
+            <button class="btn number">7</button>
+            <button class="btn number">8</button>
+            <button class="btn number">9</button>
+            <button class="btn" id="add">+</button>
+            
+            <button class="btn number">4</button>
+            <button class="btn number">5</button>
+            <button class="btn number">6</button>
+            <button class="btn" id="equals">=</button>
+            
+            <button class="btn number">1</button>
+            <button class="btn number">2</button>
+            <button class="btn number">3</button>
+            <button class="btn" id="decimal">.</button>
+            
+            <button class="btn number" style="grid-column: span 4; width: 100%;">0</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
