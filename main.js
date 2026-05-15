@@ -1,4 +1,3 @@
-const { dir } = require('console');
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
@@ -6,7 +5,6 @@ const createWindow = () => {
   const win = new BrowserWindow({
     width: 410, // Slightly wider to ensure the 5px border isn't clipped
     height: 560, // Slightly taller for the same reason
-    icon: path.join(__dirname, './assets/icon.ico'),
     frame: false, // Removes the default OS title bar
     transparent: true, // Required for rounded corners and border visibility
     resizable: false,
